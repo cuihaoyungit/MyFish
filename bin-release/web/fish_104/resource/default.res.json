@@ -1,0 +1,658 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,fish_m_1_json,fish_m_10_json,fish_m_11_json,fish_m_2_json,fish_m_3_png,fish_m_3_json,fish_m_4_json,fish_m_5_json,fish_m_6_png,fish_m_6_json,fish_m_7_json,fish_m_8_json,fish_m_9_json,bean_num_fnt,gun_num_fnt,3sheet_json,3sheet_png,2sheet_png,2sheet_json,1sheet_json,1sheet_png,gun_num_png,bean_num_png,fish_m_12_json,fish_m_12_png,net_png,background1_png,background2_png,background3_png,background4_png,bob_png,baozha_png,pan_png,tag_png,baozha_json,win_num_png,win_num_fnt,pan_num_fnt,pan_num_png,flash_json,flash_png,big_bean_mp3,button_mp3,change_sence_mp3,get_bean_mp3,hit_fish_sound_mp3,gun_shot_mp3,win_bean_m_json,win_bean_m_png,Fish14_10_png,Fish14_11_png,Fish14_12_png,Fish14_13_png,Fish14_14_png,Fish14_15_png,Fish14_16_png,Fish14_17_png,Fish14_18_png,Fish14_19_png,Fish14_20_png,Fish14_21_png,Fish14_22_png,Fish14_23_png,Fish14_24_png,Fish14_25_png,Fish14_26_png,Fish14_27_png,Fish14_28_png,Fish14_29_png,Fish14_30_png,Fish14_31_png,Fish14_32_png,Fish14_33_png,Fish14_34_png,Fish14_35_png,Fish14_36_png,Fish14_37_png,Fish14_38_png,Fish14_39_png,Fish14_40_png,Fish14_0_png,Fish14_1_png,Fish14_2_png,Fish14_3_png,Fish14_4_png,Fish14_5_png,Fish14_6_png,Fish14_7_png,Fish14_8_png,Fish14_9_png,Fish1_10_png,Fish1_11_png,Fish1_12_png,Fish1_13_png,Fish1_14_png,Fish1_15_png,Fish1_16_png,Fish1_17_png,Fish1_18_png,Fish1_19_png,Fish1_20_png,Fish1_21_png,Fish1_22_png,Fish1_23_png,Fish1_24_png,Fish1_25_png,Fish1_26_png,Fish1_27_png,Fish1_28_png,Fish1_29_png,Fish1_30_png,Fish1_31_png,Fish1_0_png,Fish1_1_png,Fish1_2_png,Fish1_3_png,Fish1_4_png,Fish1_5_png,Fish1_6_png,Fish1_7_png,Fish1_8_png,Fish1_9_png,toast_bg_png",
+			"name": "preload"
+		},
+		{
+			"keys": "loadingsheet_json,loadingsheet_png,loadingBg_png,loadingBar_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"url": "packs/1sheet_a6392f14.png",
+			"type": "image",
+			"name": "1sheet_png"
+		},
+		{
+			"url": "packs/2sheet_aa48e399.png",
+			"type": "image",
+			"name": "2sheet_png"
+		},
+		{
+			"url": "packs/3sheet_360c77f.png",
+			"type": "image",
+			"name": "3sheet_png"
+		},
+		{
+			"url": "packs/loadingsheet_2455bafb.png",
+			"type": "image",
+			"name": "loadingsheet_png"
+		},
+		{
+			"url": "packs/1sheet_b26b70b4.json",
+			"type": "sheet",
+			"name": "1sheet_json",
+			"subkeys": "fish_m_1_png,fish_m_2_png"
+		},
+		{
+			"url": "packs/2sheet_81f2aa0c.json",
+			"type": "sheet",
+			"name": "2sheet_json",
+			"subkeys": "fish_m_10_png,fish_m_11_png,fish_m_4_png,fish_m_5_png"
+		},
+		{
+			"url": "packs/3sheet_abb8058d.json",
+			"type": "sheet",
+			"name": "3sheet_json",
+			"subkeys": "bean_bg_png,bullet_png,buy_png,deposit_off_png,deposit_on_png,fish_m_7_png,fish_m_8_png,fish_m_9_png,gun_base_png,gun_num_bg_png,gun_png,score_+_png,score_-_png,shot_png,sound_off_png,sound_on_png"
+		},
+		{
+			"url": "packs/loadingsheet_7e8298c5.json",
+			"type": "sheet",
+			"name": "loadingsheet_json",
+			"subkeys": "loading_0_png,loading_1_png,loading_bg_png"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_3_44442bee.png",
+			"type": "image",
+			"name": "fish_m_3_png"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_6_77b3873b.png",
+			"type": "image",
+			"name": "fish_m_6_png"
+		},
+		{
+			"url": "assets/games/fish/number/bean_num_6cd1976a.fnt",
+			"type": "font",
+			"name": "bean_num_fnt"
+		},
+		{
+			"url": "assets/games/fish/number/bean_num_ada147a5.png",
+			"type": "image",
+			"name": "bean_num_png"
+		},
+		{
+			"url": "assets/games/fish/number/gun_num_34fe8d87.png",
+			"type": "image",
+			"name": "gun_num_png"
+		},
+		{
+			"url": "assets/games/fish/number/gun_num_99914405.fnt",
+			"type": "font",
+			"name": "gun_num_fnt"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_10_5d6da492.json",
+			"type": "json",
+			"name": "fish_m_10_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_11_f9f7c965.json",
+			"type": "json",
+			"name": "fish_m_11_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_2_8640ce4a.json",
+			"type": "json",
+			"name": "fish_m_2_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_3_52850556.json",
+			"type": "json",
+			"name": "fish_m_3_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_1_de8cbdc9.json",
+			"type": "json",
+			"name": "fish_m_1_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_4_ef79cecf.json",
+			"type": "json",
+			"name": "fish_m_4_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_6_e3c6c0d2.json",
+			"type": "json",
+			"name": "fish_m_6_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_5_2e45538f.json",
+			"type": "json",
+			"name": "fish_m_5_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_7_5e9b56e9.json",
+			"type": "json",
+			"name": "fish_m_7_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_8_26436d01.json",
+			"type": "json",
+			"name": "fish_m_8_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_9_b2997ddb.json",
+			"type": "json",
+			"name": "fish_m_9_json"
+		},
+		{
+			"url": "packs/loadingBar.png",
+			"type": "image",
+			"name": "loadingBar_png"
+		},
+		{
+			"url": "packs/loadingBg.png",
+			"type": "image",
+			"name": "loadingBg_png"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_12.json",
+			"type": "json",
+			"name": "fish_m_12_json"
+		},
+		{
+			"url": "assets/games/fish/fish/fish_m_12.png",
+			"type": "image",
+			"name": "fish_m_12_png"
+		},
+		{
+			"url": "assets/games/fish/gun/net.png",
+			"type": "image",
+			"name": "net_png"
+		},
+		{
+			"url": "assets/games/fish/background/background1.png",
+			"type": "image",
+			"name": "background1_png"
+		},
+		{
+			"url": "assets/games/fish/background/background2.png",
+			"type": "image",
+			"name": "background2_png"
+		},
+		{
+			"url": "assets/games/fish/background/background3.png",
+			"type": "image",
+			"name": "background3_png"
+		},
+		{
+			"url": "assets/games/fish/background/background4.png",
+			"type": "image",
+			"name": "background4_png"
+		},
+		{
+			"url": "assets/games/fish/background/bob.png",
+			"type": "image",
+			"name": "bob_png"
+		},
+		{
+			"url": "assets/games/fish/effect/baozha.png",
+			"type": "image",
+			"name": "baozha_png"
+		},
+		{
+			"url": "assets/games/fish/effect/pan.png",
+			"type": "image",
+			"name": "pan_png"
+		},
+		{
+			"url": "assets/games/fish/effect/tag.png",
+			"type": "image",
+			"name": "tag_png"
+		},
+		{
+			"url": "assets/games/fish/effect/baozha.json",
+			"type": "json",
+			"name": "baozha_json"
+		},
+		{
+			"url": "assets/games/fish/number/win_num.png",
+			"type": "image",
+			"name": "win_num_png"
+		},
+		{
+			"url": "assets/games/fish/number/win_num.fnt",
+			"type": "font",
+			"name": "win_num_fnt"
+		},
+		{
+			"url": "assets/games/fish/number/pan_num.fnt",
+			"type": "font",
+			"name": "pan_num_fnt"
+		},
+		{
+			"url": "assets/games/fish/number/pan_num.png",
+			"type": "image",
+			"name": "pan_num_png"
+		},
+		{
+			"url": "assets/games/fish/effect/flash.json",
+			"type": "json",
+			"name": "flash_json"
+		},
+		{
+			"url": "assets/games/fish/effect/flash.png",
+			"type": "image",
+			"name": "flash_png"
+		},
+		{
+			"url": "assets/games/fish/sound/big_bean.mp3",
+			"type": "sound",
+			"name": "big_bean_mp3"
+		},
+		{
+			"url": "assets/games/fish/sound/button.mp3",
+			"type": "sound",
+			"name": "button_mp3"
+		},
+		{
+			"url": "assets/games/fish/sound/change_sence.mp3",
+			"type": "sound",
+			"name": "change_sence_mp3"
+		},
+		{
+			"url": "assets/games/fish/sound/get_bean.mp3",
+			"type": "sound",
+			"name": "get_bean_mp3"
+		},
+		{
+			"url": "assets/games/fish/sound/hit_fish_sound.mp3",
+			"type": "sound",
+			"name": "hit_fish_sound_mp3"
+		},
+		{
+			"url": "assets/games/fish/sound/gun_shot.mp3",
+			"type": "sound",
+			"name": "gun_shot_mp3"
+		},
+		{
+			"url": "assets/games/fish/bean/win_bean_m.json",
+			"type": "json",
+			"name": "win_bean_m_json"
+		},
+		{
+			"url": "assets/games/fish/bean/win_bean_m.png",
+			"type": "image",
+			"name": "win_bean_m_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_10.png",
+			"type": "image",
+			"name": "Fish14_10_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_11.png",
+			"type": "image",
+			"name": "Fish14_11_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_12.png",
+			"type": "image",
+			"name": "Fish14_12_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_13.png",
+			"type": "image",
+			"name": "Fish14_13_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_14.png",
+			"type": "image",
+			"name": "Fish14_14_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_15.png",
+			"type": "image",
+			"name": "Fish14_15_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_16.png",
+			"type": "image",
+			"name": "Fish14_16_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_17.png",
+			"type": "image",
+			"name": "Fish14_17_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_18.png",
+			"type": "image",
+			"name": "Fish14_18_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_19.png",
+			"type": "image",
+			"name": "Fish14_19_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_20.png",
+			"type": "image",
+			"name": "Fish14_20_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_21.png",
+			"type": "image",
+			"name": "Fish14_21_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_22.png",
+			"type": "image",
+			"name": "Fish14_22_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_23.png",
+			"type": "image",
+			"name": "Fish14_23_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_24.png",
+			"type": "image",
+			"name": "Fish14_24_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_25.png",
+			"type": "image",
+			"name": "Fish14_25_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_26.png",
+			"type": "image",
+			"name": "Fish14_26_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_27.png",
+			"type": "image",
+			"name": "Fish14_27_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_28.png",
+			"type": "image",
+			"name": "Fish14_28_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_29.png",
+			"type": "image",
+			"name": "Fish14_29_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_30.png",
+			"type": "image",
+			"name": "Fish14_30_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_31.png",
+			"type": "image",
+			"name": "Fish14_31_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_32.png",
+			"type": "image",
+			"name": "Fish14_32_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_33.png",
+			"type": "image",
+			"name": "Fish14_33_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_34.png",
+			"type": "image",
+			"name": "Fish14_34_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_35.png",
+			"type": "image",
+			"name": "Fish14_35_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_36.png",
+			"type": "image",
+			"name": "Fish14_36_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_37.png",
+			"type": "image",
+			"name": "Fish14_37_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_38.png",
+			"type": "image",
+			"name": "Fish14_38_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_39.png",
+			"type": "image",
+			"name": "Fish14_39_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_40.png",
+			"type": "image",
+			"name": "Fish14_40_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_0.png",
+			"type": "image",
+			"name": "Fish14_0_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_1.png",
+			"type": "image",
+			"name": "Fish14_1_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_2.png",
+			"type": "image",
+			"name": "Fish14_2_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_3.png",
+			"type": "image",
+			"name": "Fish14_3_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_4.png",
+			"type": "image",
+			"name": "Fish14_4_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_5.png",
+			"type": "image",
+			"name": "Fish14_5_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_6.png",
+			"type": "image",
+			"name": "Fish14_6_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_7.png",
+			"type": "image",
+			"name": "Fish14_7_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_8.png",
+			"type": "image",
+			"name": "Fish14_8_png"
+		},
+		{
+			"url": "assets/games/fish/fish3D/fish14/Fish14_9.png",
+			"type": "image",
+			"name": "Fish14_9_png"
+		},
+		{
+			"name": "Fish1_10_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_10.png"
+		},
+		{
+			"name": "Fish1_11_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_11.png"
+		},
+		{
+			"name": "Fish1_12_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_12.png"
+		},
+		{
+			"name": "Fish1_13_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_13.png"
+		},
+		{
+			"name": "Fish1_14_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_14.png"
+		},
+		{
+			"name": "Fish1_15_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_15.png"
+		},
+		{
+			"name": "Fish1_16_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_16.png"
+		},
+		{
+			"name": "Fish1_17_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_17.png"
+		},
+		{
+			"name": "Fish1_18_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_18.png"
+		},
+		{
+			"name": "Fish1_19_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_19.png"
+		},
+		{
+			"name": "Fish1_20_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_20.png"
+		},
+		{
+			"name": "Fish1_21_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_21.png"
+		},
+		{
+			"name": "Fish1_22_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_22.png"
+		},
+		{
+			"name": "Fish1_23_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_23.png"
+		},
+		{
+			"name": "Fish1_24_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_24.png"
+		},
+		{
+			"name": "Fish1_25_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_25.png"
+		},
+		{
+			"name": "Fish1_26_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_26.png"
+		},
+		{
+			"name": "Fish1_27_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_27.png"
+		},
+		{
+			"name": "Fish1_28_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_28.png"
+		},
+		{
+			"name": "Fish1_29_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_29.png"
+		},
+		{
+			"name": "Fish1_30_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_30.png"
+		},
+		{
+			"name": "Fish1_31_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_31.png"
+		},
+		{
+			"name": "Fish1_0_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_0.png"
+		},
+		{
+			"name": "Fish1_1_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_1.png"
+		},
+		{
+			"name": "Fish1_2_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_2.png"
+		},
+		{
+			"name": "Fish1_3_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_3.png"
+		},
+		{
+			"name": "Fish1_4_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_4.png"
+		},
+		{
+			"name": "Fish1_5_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_5.png"
+		},
+		{
+			"name": "Fish1_6_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_6.png"
+		},
+		{
+			"name": "Fish1_7_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_7.png"
+		},
+		{
+			"name": "Fish1_8_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_8.png"
+		},
+		{
+			"name": "Fish1_9_png",
+			"type": "image",
+			"url": "assets/games/fish/fish3D/fish1/Fish1_9.png"
+		},
+		{
+			"name": "toast_bg_png",
+			"type": "image",
+			"url": "assets/games/common/toast/toast_bg.png"
+		}
+	]
+}

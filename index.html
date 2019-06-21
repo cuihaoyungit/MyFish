@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="landscape"
+         data-scale-mode="fixedWidth"
+         data-frame-rate="30"
+         data-content-width="1280"
+         data-content-height="720"
+         data-multi-fingered="2"
+         data-show-fps="false" 
+         data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+<script>
+
+
+
+     function isPhoneEvn() {  
+        var sUserAgent = navigator.userAgent.toLowerCase();  
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";  
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";  
+        // document.writeln("您的浏览设备为：");  
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  
+        return true;
+        } else {  
+        return false;
+        }  
+    } 
+
+        if(true )
+    {
+        
+        //for mobile js bridge
+        var setupWebViewJavascriptBridge = function (callback) {
+            if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+            if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+            window.WVJBCallbacks = [callback];
+            var WVJBIframe = document.createElement('iframe');
+            WVJBIframe.style.display = 'none';
+            WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+            document.documentElement.appendChild(WVJBIframe);
+            setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+        }
+
+    }
+    else
+    {
+        
+        document.domain = 'qiyuexiu.com';
+        var pc = {};
+        pc.bridge = {};
+        pc.bridge.center = {};
+
+        pc.bridge.registerHandler = function(key,callback){
+            if( !pc.bridge.center[key] ) pc.bridge.center[key] = [];
+            pc.bridge.center[key] = callback;
+        }
+
+        pc.bridge.callHandler = function(key,data,callback){
+            parent.callJSFunction( key, data, callback ? null : callback )
+        }
+
+        pc.bridge.callMyHandler = function(key,data,callback){
+            if( !pc.bridge.center[key] ) return;
+            pc.bridge.center[key].call( this,  data, callback );
+        }
+
+        var setupWebViewJavascriptBridge = function (callback) {
+            callback( pc.bridge );
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    var loadScript = function (list, callback) {
+        var loaded = 0;
+        var loadNext = function () {
+            loadSingleScript(list[loaded], function () {
+                loaded++;
+                if (loaded >= list.length) {
+                    callback();
+                }
+                else {
+                    loadNext();
+                }
+            })
+        };
+        loadNext();
+    };
+
+    var loadSingleScript = function (src, callback) {
+        var s = document.createElement('script');
+        s.async = false;
+        s.src = src;
+        s.addEventListener('load', function () {
+            s.parentNode.removeChild(s);
+            s.removeEventListener('load', arguments.callee, false);
+            callback();
+        }, false);
+        document.body.appendChild(s);
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+    xhr.addEventListener("load", function () {
+        var manifest = JSON.parse(xhr.response);
+        var list = manifest.initial.concat(manifest.game);
+        loadScript(list, function () {
+            /**
+             * {
+             * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+             * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+             * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+             * "calculateCanvasScaleFactor": //a function return canvas scale factor
+             * }
+             **/
+            egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+                var backingStore = context.backingStorePixelRatio ||
+                    context.webkitBackingStorePixelRatio ||
+                    context.mozBackingStorePixelRatio ||
+                    context.msBackingStorePixelRatio ||
+                    context.oBackingStorePixelRatio ||
+                    context.backingStorePixelRatio || 1;
+                return (window.devicePixelRatio || 1) / backingStore;
+            }});
+        });
+    });
+    xhr.send(null);
+
+
+
+		//删除中国移动浮标
+		window.onload = function () {
+
+			var myelement = document.getElementById('statusholder');
+			if (myelement) { myelement.remove(); }
+
+			myelement = document.getElementById('progresstextholder');
+			if (myelement) { myelement.remove(); }
+
+			myelement = document.getElementById('ftsiappholder');
+			if (myelement) { myelement.remove(); }
+
+			myelement = document.getElementById('tlbstoolbar');
+			if (myelement) { myelement.remove(); }
+			
+		}
+</script>
+</body>
+
+</html>
