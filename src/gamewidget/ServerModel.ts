@@ -55,6 +55,23 @@ module gamewidget
              
         }
 
+        /*
+        "{
+            "DeviceType":"1",
+            "MobileCode":"435a48fb0db13e6c3344d7638bf3de0d",
+            "chatRoomID":"602537",
+            "gameId":"21",
+            "gameRoomID":"21",
+            "ip":"wss://gamefish.qiyuexiu.com",
+            "port":"40003",
+            "sub_channel":"3-10",
+            "token":"398987825eb0b4fa4193a4ec200bf1b6",
+            "userId":"604495"
+        }"
+        */
+        //
+        // Debug 模式下，从NativeModel中传递时间，可以在模拟的时候注意下参数
+        //
         public getNativeAction(nativeaction:NativeEvent){
             egret.log("收到native消息");
             this.testCreateSocket(nativeaction.strdata);
