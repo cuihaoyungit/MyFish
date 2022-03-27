@@ -380,7 +380,7 @@ declare namespace eui.sys {
     }
 }
 declare namespace eui {
-    function getAssets(source: string, callback: (content: any) => void): void;
+    function getAssets(source: string, callback: (content: any) => void, thisObject: any): void;
     function getTheme(source: string, callback: (content: any) => void): void;
     /**
      * The UIComponent class is the base class for all visual components, both skinnable and nonskinnable.
@@ -625,6 +625,7 @@ declare namespace eui {
         /**
          * Number that specifies the explicit width of the component,
          * in pixels, in the component's coordinates.
+         * @readOnly
          * @version Egret 2.4
          * @version eui 1.0
          * @platform Web,Native
@@ -632,12 +633,13 @@ declare namespace eui {
          */
         /**
          * 外部显式指定的宽度。
+         * @readOnly
          * @version Egret 2.4
          * @version eui 1.0
          * @platform Web,Native
          * @language zh_CN
          */
-        explicitWidth: number;
+        readonly explicitWidth: number;
         /**
          * Number that specifies the explicit height of the component,
          * in pixels, in the component's coordinates.
@@ -655,7 +657,7 @@ declare namespace eui {
          * @platform Web,Native
          * @language zh_CN
          */
-        explicitHeight: number;
+        readonly explicitHeight: number;
         /**
          * The minimum recommended width of the component to be considered
          * by the parent during layout. This value is in the
@@ -2683,6 +2685,7 @@ declare namespace eui {
          * @platform Web,Native
          */
         getPreferredBounds(bounds: egret.Rectangle): void;
+        unwatchAll(): void;
     }
 }
 declare namespace eui {
@@ -9094,6 +9097,8 @@ declare namespace eui {
          * 应用当前的视图状态。子类覆盖此方法在视图状态发生改变时执行相应更新操作。
          */
         private commitCurrentState;
+        $watchers: Watcher[];
+        unwatchAll(): void;
     }
 }
 declare namespace eui {
@@ -10662,6 +10667,18 @@ declare namespace eui {
         /**
          * @private
          */
+        private $isTouchCancle;
+        /**
+         * @private
+         */
+        private onTouchBegin();
+        /**
+         * @private
+         */
+        private onTouchCancle();
+        /**
+         * @private
+         */
         private onfocusIn();
         /**
          * @private
@@ -11916,7 +11933,7 @@ declare namespace eui {
          * @platform Web,Native
          * @language zh_CN
          */
-        static ADD: string;
+        static readonly ADD: string;
         /**
          * Indicates that the collection applied a sort, a filter, or both.
          * This change can potentially be easier to handle than a RESET.
@@ -11932,7 +11949,7 @@ declare namespace eui {
          * @platform Web,Native
          * @language zh_CN
          */
-        static REFRESH: string;
+        static readonly REFRESH: string;
         /**
          * Indicates that the collection removed an item or items.
          * @version Egret 2.4
@@ -11947,7 +11964,7 @@ declare namespace eui {
          * @platform Web,Native
          * @language zh_CN
          */
-        static REMOVE: string;
+        static readonly REMOVE: string;
         /**
          * Indicates that the item at the position identified by the
          * CollectionEvent <code>location</code> property has been replaced.
@@ -11963,7 +11980,7 @@ declare namespace eui {
          * @platform Web,Native
          * @language zh_CN
          */
-        static REPLACE: string;
+        static readonly REPLACE: string;
         /**
          * Indicates that the collection has changed so drastically that
          * a reset is required.
@@ -11979,7 +11996,7 @@ declare namespace eui {
          * @platform Web,Native
          * @language zh_CN
          */
-        static RESET: string;
+        static readonly RESET: string;
         /**
          * Indicates that one or more items were updated within the collection.
          * The affected item(s)
@@ -11996,7 +12013,7 @@ declare namespace eui {
          * @platform Web,Native
          * @language zh_CN
          */
-        static UPDATE: string;
+        static readonly UPDATE: string;
     }
 }
 declare namespace eui {
@@ -13227,7 +13244,7 @@ declare namespace EXML {
     /**
      * @private
      */
-    function $parseURLContent(url: string, text: string): any;
+    function $parseURLContent(url: string, text: string | any): any;
 }
 declare namespace eui.sys {
     /**
