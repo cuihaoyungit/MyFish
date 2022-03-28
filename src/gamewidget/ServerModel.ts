@@ -27,8 +27,8 @@ module gamewidget
         private buffer:egret.ByteArray;
 
         private gameParam: any = { 
-            port:60001,
-            ip:"wss://gamefish.qiyuexiu.com",
+            port:8888,
+            ip:"ws://192.168.122.141", //ip:"wss://gamefish.qiyuexiu.com",
             userId: 233669728, 
             token: "5f97df0f6d1623b91bf0bdcc52ad5a66", 
             chatRoomID:40009,
@@ -38,6 +38,7 @@ module gamewidget
             sub_channel:"5-2",
             MobileCode:"0705881d0f2cf29f83ee2aa422dc2e7d"
          };
+
          private socketevent:SocketEvent;
         public constructor()
         {

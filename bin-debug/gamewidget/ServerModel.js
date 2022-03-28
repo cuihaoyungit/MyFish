@@ -16,8 +16,8 @@ var gamewidget;
             var _this = _super.call(this) || this;
             _this.deviceType = -2;
             _this.gameParam = {
-                port: 60001,
-                ip: "wss://gamefish.qiyuexiu.com",
+                port: 8888,
+                ip: "ws://192.168.122.141",
                 userId: 233669728,
                 token: "5f97df0f6d1623b91bf0bdcc52ad5a66",
                 chatRoomID: 40009,
@@ -40,6 +40,23 @@ var gamewidget;
             this.nativieModel.addEventListener(NativeEvent.NATIVE, this.getNativeAction, this);
             this.nativieModel.init();
         };
+        /*
+        "{
+            "DeviceType":"1",
+            "MobileCode":"435a48fb0db13e6c3344d7638bf3de0d",
+            "chatRoomID":"602537",
+            "gameId":"21",
+            "gameRoomID":"21",
+            "ip":"wss://gamefish.qiyuexiu.com",
+            "port":"40003",
+            "sub_channel":"3-10",
+            "token":"398987825eb0b4fa4193a4ec200bf1b6",
+            "userId":"604495"
+        }"
+        */
+        //
+        // Debug 模式下，从NativeModel中传递时间，可以在模拟的时候注意下参数
+        //
         ServerModel.prototype.getNativeAction = function (nativeaction) {
             egret.log("收到native消息");
             this.testCreateSocket(nativeaction.strdata);
