@@ -25,7 +25,10 @@
       "name": "promise"
     },
     {
-      "name":"eui"
+      "name": "eui"
     }
-  ]
+  ],
+  "vivo": {
+    "usePlugin": true
+  }
 }
