@@ -57,4 +57,3 @@ var gamewidget;
     gamewidget.Bullet = Bullet;
     __reflect(Bullet.prototype, "gamewidget.Bullet");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=Bullet.js.map

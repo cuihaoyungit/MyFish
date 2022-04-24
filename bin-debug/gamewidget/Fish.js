@@ -77,4 +77,3 @@ var gamewidget;
     gamewidget.Fish = Fish;
     __reflect(Fish.prototype, "gamewidget.Fish");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=Fish.js.map

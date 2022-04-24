@@ -52,4 +52,3 @@ var gamewidget;
     gamewidget.AutoPlay = AutoPlay;
     __reflect(AutoPlay.prototype, "gamewidget.AutoPlay");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=AutoPlay.js.map

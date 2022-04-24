@@ -91,4 +91,3 @@ var gamewidget;
     gamewidget.CaiPan = CaiPan;
     __reflect(CaiPan.prototype, "gamewidget.CaiPan");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=CaiPan.js.map

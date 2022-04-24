@@ -64,4 +64,3 @@ var gamewidget;
     gamewidget.NumberView = NumberView;
     __reflect(NumberView.prototype, "gamewidget.NumberView");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=NumberView.js.map

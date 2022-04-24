@@ -34,4 +34,3 @@ var gamewidget;
     gamewidget.SoundModule = SoundModule;
     __reflect(SoundModule.prototype, "gamewidget.SoundModule");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=SoundModule.js.map

@@ -84,4 +84,3 @@ var gamewidget;
     gamewidget.Toast = Toast;
     __reflect(Toast.prototype, "gamewidget.Toast");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=Toast.js.map

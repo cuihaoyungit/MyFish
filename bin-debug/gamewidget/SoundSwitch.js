@@ -52,4 +52,3 @@ var gamewidget;
     gamewidget.SoundSwitch = SoundSwitch;
     __reflect(SoundSwitch.prototype, "gamewidget.SoundSwitch");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=SoundSwitch.js.map

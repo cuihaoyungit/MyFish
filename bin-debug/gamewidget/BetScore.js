@@ -114,4 +114,3 @@ var gamewidget;
     gamewidget.BetScore = BetScore;
     __reflect(BetScore.prototype, "gamewidget.BetScore");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=BetScore.js.map

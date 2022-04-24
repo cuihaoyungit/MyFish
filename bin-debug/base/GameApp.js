@@ -34,4 +34,3 @@ var base;
     base.GameApp = GameApp;
     __reflect(GameApp.prototype, "base.GameApp");
 })(base || (base = {}));
-//# sourceMappingURL=GameApp.js.map

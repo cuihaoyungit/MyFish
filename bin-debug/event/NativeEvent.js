@@ -19,4 +19,3 @@ var NativeEvent = (function (_super) {
     return NativeEvent;
 }(egret.Event));
 __reflect(NativeEvent.prototype, "NativeEvent");
-//# sourceMappingURL=NativeEvent.js.map

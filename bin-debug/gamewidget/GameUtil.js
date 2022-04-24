@@ -31,4 +31,3 @@ var gamewidget;
     }
     gamewidget.createBitmapByName = createBitmapByName;
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=GameUtil.js.map

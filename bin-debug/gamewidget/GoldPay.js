@@ -85,4 +85,3 @@ var gamewidget;
     gamewidget.GoldPay = GoldPay;
     __reflect(GoldPay.prototype, "gamewidget.GoldPay");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=GoldPay.js.map

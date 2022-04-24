@@ -25,4 +25,3 @@ var gamewidget;
     gamewidget.LogUtils = LogUtils;
     __reflect(LogUtils.prototype, "gamewidget.LogUtils");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=LogUtils.js.map

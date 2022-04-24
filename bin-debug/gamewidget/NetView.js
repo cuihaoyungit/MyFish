@@ -52,4 +52,3 @@ var gamewidget;
     gamewidget.NetView = NetView;
     __reflect(NetView.prototype, "gamewidget.NetView");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=NetView.js.map

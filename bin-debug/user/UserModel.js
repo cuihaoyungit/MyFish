@@ -45,4 +45,3 @@ var user;
     user.UserModel = UserModel;
     __reflect(UserModel.prototype, "user.UserModel");
 })(user || (user = {}));
-//# sourceMappingURL=UserModel.js.map

@@ -386,4 +386,3 @@ var gamewidget;
     gamewidget.ServerModel = ServerModel;
     __reflect(ServerModel.prototype, "gamewidget.ServerModel");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=ServerModel.js.map

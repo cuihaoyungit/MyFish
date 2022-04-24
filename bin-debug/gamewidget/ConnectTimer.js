@@ -54,4 +54,3 @@ var gamewidget;
     gamewidget.ConnectTimer = ConnectTimer;
     __reflect(ConnectTimer.prototype, "gamewidget.ConnectTimer");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=ConnectTimer.js.map

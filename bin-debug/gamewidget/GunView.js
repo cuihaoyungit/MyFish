@@ -593,4 +593,3 @@ var gamewidget;
     gamewidget.GunView = GunView;
     __reflect(GunView.prototype, "gamewidget.GunView");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=GunView.js.map

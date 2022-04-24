@@ -57,4 +57,3 @@ var base;
     base.baseclass = baseclass;
     __reflect(baseclass.prototype, "base.baseclass");
 })(base || (base = {}));
-//# sourceMappingURL=baseclass.js.map

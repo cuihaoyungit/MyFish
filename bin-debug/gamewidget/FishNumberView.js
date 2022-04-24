@@ -49,4 +49,3 @@ var gamewidget;
     gamewidget.FishNumberView = FishNumberView;
     __reflect(FishNumberView.prototype, "gamewidget.FishNumberView");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=FishNumberView.js.map

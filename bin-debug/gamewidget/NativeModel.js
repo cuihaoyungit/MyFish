@@ -181,4 +181,3 @@ var gamewidget;
     gamewidget.NativeModel = NativeModel;
     __reflect(NativeModel.prototype, "gamewidget.NativeModel");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=NativeModel.js.map

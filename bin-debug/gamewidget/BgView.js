@@ -106,4 +106,3 @@ var gamewidget;
     gamewidget.BgView = BgView;
     __reflect(BgView.prototype, "gamewidget.BgView");
 })(gamewidget || (gamewidget = {}));
-//# sourceMappingURL=BgView.js.map
